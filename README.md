@@ -39,13 +39,13 @@ include_once( get_template_directory() . '/lib/init.php' );
 
 //* Define Genesis Child theme constants
 	
-	/** Child Theme Name, used in footer. */
+	// Child Theme Name, used in footer.
 	define( 'CHILD_THEME_NAME', 'Tower' );
 	
-	/** Child Theme URL, used in footer. */
+	// Child Theme URL, used in footer.
 	define( 'CHILD_THEME_URL', 'http://tower.holeintheskymedia.net/' );
 	
-	/** Child Theme Version. */
+	// Child Theme Version.
 	define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Genesis functions
