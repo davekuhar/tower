@@ -9,7 +9,7 @@ A starter child theme for the Genesis Framework.
 I should probably write an introduction.
 
 ## Usage
-This is about as basic as it gets. This will create a bare bones Genesis child theme with the default `style.css` ignored in favor of `\css\genesis.css` which is a duplicate of the stylesheet from the Genesis parent theme version. I prefer this method so that when there is an update to Genesis I can compare the new stylesheet to mine and determine whether I want to incorporate the updates into my stylesheet.
+This is about as basic as it gets. This will create a bare bones Genesis child theme with the default `style.css` ignored in favor of `/css/genesis.css` which is a duplicate of the stylesheet from the Genesis parent theme version. I prefer this method so that when there is an update to Genesis I can compare the new stylesheet to mine and determine whether I want to incorporate the updates into my stylesheet.
 
 ### style.css:
 ```css
