@@ -17,7 +17,7 @@ This is about as basic as it gets. This will create a bare bones Genesis child t
 	Theme Name: Tower
 	Description: A starter child theme for the Genesis Framework.
 	Author: Joe Mendel
-	Author URI: http://www.transmitstudio.com/
+	Author URI: http://holeintheskymedia.com/
 	Version: 1.0.0
  
 	Template: genesis
