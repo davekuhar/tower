@@ -56,10 +56,11 @@ include_once( CHILD_DIR . '/lib/genesis.php' );
 ```php
 <?php
 
-// Replace default style sheet
-add_filter( 'stylesheet_uri', 'xmit_replace_default_style_sheet', 10, 2 );
-function xmit_replace_default_style_sheet() {
-	return CHILD_URL . '/css/genesis.css';
+// Replace main styleheet with a copy of the Genesis stylesheet
+remove_action('genesis_meta', 'genesis_enqueue_main_stylesheet', 5);
+add_action('genesis_meta', 'xmit_genesis_enqueue_main_stylesheet', 10);
+function xmit_genesis_enqueue_main_stylesheet() {
+	wp_enqueue_style( 'genesis-stylesheet', CHILD_URL . '/css/genesis.css', array(), PARENT_THEME_VERSION );
 }
 
 // Add custom styles
