@@ -31,6 +31,7 @@ This is about as basic as it gets. This will create a bare bones Genesis child t
 ```
 ### genesis.css
 I make just a few changes in this file which is a copy of `style.css` from the Genesis parent. I remove the TOC and theme specific info from the first few lines. I leave the StudioPress author info intact because, well, they're the author. Then, unless you plan on using the Lato font family from [Google Fonts](http://www.google.com/fonts), I comment that line out.
+`/* @import url(//fonts.googleapis.com/css?family=Lato:300,700); */`
 
 ### functions.php:
 ```php
