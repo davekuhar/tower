@@ -29,9 +29,40 @@ This is about as basic as it gets. This will create a bare bones Genesis child t
 
 /* All customs styles for this theme are in /css */
 ```
-### genesis.css
+### /css/genesis.css
 I make just a few changes in this file which is a copy of `style.css` from the Genesis parent. I remove the TOC and theme specific info from the first few lines. I leave the StudioPress author info intact because, well, they're the author. Then, unless you plan on using the Lato font family from [Google Fonts](http://www.google.com/fonts), I comment that line out.
 `/* @import url(//fonts.googleapis.com/css?family=Lato:300,700); */`
+
+### /css/custom.css
+I'll usually start this off with a Genesis Reset of sorts. I'll set the `font-family` where the Genesis parent uses Lato and remove `border-bottom` from the various anchor links set by the Genesis parent.
+```css
+/*
+Genesis Reset
+---------------------------------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-area,
+.genesis-nav-menu {
+	font-family: inherit;
+}
+
+.author-box a,
+.entry-content a,
+.entry-meta a,
+.entry-pagination a,
+.comment-respond a,
+.entry-comments a,
+.sidebar a,
+.footer-widgets a,
+.site-footer a {
+	border-bottom: none;
+}
+```
 
 ### functions.php:
 ```php
